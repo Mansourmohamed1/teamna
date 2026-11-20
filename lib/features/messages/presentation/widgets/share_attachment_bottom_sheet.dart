@@ -21,7 +21,6 @@ class ShareAttachmentBottomSheet extends StatelessWidget {
     required this.onPersonCardTap,
   });
 
-  /// Helper method لاستدعاء الـ BottomSheet بسهولة من أي شاشة شات
   static Future<void> show(
     BuildContext context, {
     required VoidCallback onPhotoTap,
@@ -32,7 +31,7 @@ class ShareAttachmentBottomSheet extends StatelessWidget {
     return showModalBottomSheet(
       context: context,
       isScrollControlled: true,
-      useRootNavigator: true, // عشان يظهر فوق الـ BottomNavBar الخارجي لو موجود
+      useRootNavigator: true, 
       backgroundColor: Colors.transparent,
       builder: (_) => ShareAttachmentBottomSheet(
         onPhotoTap: onPhotoTap,

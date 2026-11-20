@@ -37,7 +37,7 @@ class _NewConversationScreenState extends State<NewConversationScreen> {
     SuggestedPersonModel(
       id: '2',
       name: 'Sara Mahmoud',
-      imageUrl: AppAssets.boyImage, // استبدليه بصورة البنت من AppAssets عندك
+      imageUrl: AppAssets.boyImage, 
       roleAndOrg: 'UI/UX Designer · ITI',
       statusText: 'Available · Remote',
       isVerified: true,

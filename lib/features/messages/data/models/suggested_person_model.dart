@@ -23,7 +23,7 @@ class SuggestedPersonModel {
 class TeammateSuggestionModel {
   final String id;
   final String name;
-  final String projectTitle; // e.g. "Your teammate · Student Planner"
+  final String projectTitle; 
 
   const TeammateSuggestionModel({
     required this.id,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:t2mna/core/constants/app_assets.dart' show AppAssets;
+import 'package:t2mna/core/constants/app_assets.dart';
 import 'package:t2mna/core/constants/app_fonts.dart';
 import 'package:t2mna/core/constants/app_sizes.dart';
 import 'package:t2mna/core/shared/widgets/custom_button.dart';
@@ -9,6 +9,7 @@ import 'package:t2mna/core/theme/app_text_style.dart';
 import 'package:t2mna/features/messages/data/models/conversation_model.dart';
 import 'package:t2mna/features/messages/presentation/pages/chat_details_screen.dart';
 import 'package:t2mna/features/messages/presentation/pages/new_conversation_screen.dart';
+import 'package:t2mna/features/messages/presentation/pages/notifications_screen.dart';
 import 'package:t2mna/features/messages/presentation/pages/team_chat_screen.dart';
 import 'package:t2mna/features/messages/presentation/widgets/collaboration_info_banner.dart';
 import 'package:t2mna/features/messages/presentation/widgets/messages_filter_tabs.dart';
@@ -72,17 +73,14 @@ class _MessagesScreenState extends State<MessagesScreen> {
     final showTeams = _selectedTabIndex == 0 || _selectedTabIndex == 2;
 
     return Scaffold(
-      // خلفية الصفحة الدافئة المطابقة للتصميم
       backgroundColor: const Color(0xFFFAF6EE),
       body: SafeArea(
-        bottom:
-            false, // الـ BottomNavBar الخارجي هيتعامل مع الـ bottom safe area
+        bottom: false,
         child: SingleChildScrollView(
           padding: EdgeInsets.only(
             left: AppSizes.screenHorizontalPadding.w,
             right: AppSizes.screenHorizontalPadding.w,
             top: AppSizes.lg.h,
-            // تأمين مسافة للـ Bottom Navigation Bar الخارجي (98.h + مسافة أمان)
             bottom: AppSizes.bottomNavHeight + AppSizes.xl.h,
           ),
           child: Column(
@@ -158,8 +156,7 @@ class _MessagesScreenState extends State<MessagesScreen> {
               ],
               const CollaborationInfoBanner(
                 title: 'Keep collaboration close',
-                description:
-                    'Private chats don’t require team membership. Team chats are visible only to members.',
+                description: 'Private chats don’t require team membership. Team chats are visible only to members.',
               ),
               SizedBox(height: AppSizes.xl.h),
               Center(
@@ -196,7 +193,10 @@ class _MessagesScreenState extends State<MessagesScreen> {
         ),
         GestureDetector(
           onTap: () {
-            // TODO: Navigate to notifications
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const NotificationsScreen()),
+            );
           },
           child: Text(
             'Notifications',

@@ -29,7 +29,6 @@ class ChatDetailsScreen extends StatefulWidget {
 class _ChatDetailsScreenState extends State<ChatDetailsScreen> {
   final TextEditingController _messageController = TextEditingController();
 
-  // Mock Data (استبدلها بالـ Cubit / Bloc لاحقاً)
   final List<ChatMessageModel> _messages = [
     const ChatMessageModel(
       id: '1',
@@ -141,7 +140,6 @@ class _ChatDetailsScreenState extends State<ChatDetailsScreen> {
               Padding(
                 padding: EdgeInsets.only(
                   top: AppSizes.sm.h,
-                  // لو الكيبورد مقفول نسيب مساحة للـ BottomNavBar الخارجي
                   bottom: isKeyboardOpen
                       ? AppSizes.md.h
                       : AppSizes.bottomNavHeight + AppSizes.md.h,
@@ -155,7 +153,7 @@ class _ChatDetailsScreenState extends State<ChatDetailsScreen> {
                       onPhotoTap: () => _sendMessage('📷 Shared a photo'),
                       onFileTap: () => _sendMessage('📄 Shared a document'),
                       onProjectCardTap: () =>
-                          _sendMessage('🚀 Shared project: Student Planner'),
+                          _sendMessage('Shared project: Student Planner'),
                       onPersonCardTap: () =>
                           _sendMessage('👤 Shared contact card'),
                     );

@@ -9,11 +9,13 @@ class ConversationOptionItem {
   final String title;
   final String subtitle;
   final VoidCallback onTap;
+  final bool showArrow;
 
   const ConversationOptionItem({
     required this.title,
     required this.subtitle,
     required this.onTap,
+    this.showArrow = false,
   });
 }
 

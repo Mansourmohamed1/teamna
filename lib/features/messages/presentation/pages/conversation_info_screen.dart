@@ -5,8 +5,11 @@ import 'package:t2mna/core/constants/app_fonts.dart';
 import 'package:t2mna/core/constants/app_sizes.dart';
 import 'package:t2mna/core/theme/app_colors.dart';
 import 'package:t2mna/core/theme/app_text_style.dart';
+import 'package:t2mna/features/messages/data/models/chat_message_model.dart';
 import 'package:t2mna/features/messages/data/models/suggested_person_model.dart';
+import 'package:t2mna/features/messages/presentation/pages/search_conversation_screen.dart';
 import 'package:t2mna/features/messages/presentation/widgets/collaboration_info_banner.dart';
+import 'package:t2mna/features/messages/presentation/widgets/conversation_controls_bottom_sheet.dart';
 import 'package:t2mna/features/messages/presentation/widgets/conversation_options_card.dart';
 import 'package:t2mna/features/messages/presentation/widgets/messages_filter_tabs.dart';
 import 'package:t2mna/features/messages/presentation/widgets/messages_header.dart';
@@ -49,15 +52,22 @@ class _ConversationInfoScreenState extends State<ConversationInfoScreen> {
       ConversationOptionItem(
         title: 'View profile',
         subtitle: 'Skills, work and initiative credential',
-        onTap: () {
-          // TODO: Navigate to user profile
-        },
+        onTap: () {},
       ),
       ConversationOptionItem(
         title: 'Search conversation',
         subtitle: 'Find a message or shared link',
-        onTap: () {
-          // TODO: Open in-chat search
+        onTap: () async {
+          final selectedMessage = await Navigator.push<ChatMessageModel>(
+            context,
+            MaterialPageRoute(
+              builder: (_) =>
+                  SearchConversationScreen(userName: widget.userName),
+            ),
+          );
+          if (selectedMessage != null && context.mounted) {
+            Navigator.pop(context, selectedMessage);
+          }
         },
       ),
       ConversationOptionItem(
@@ -70,15 +80,31 @@ class _ConversationInfoScreenState extends State<ConversationInfoScreen> {
       ConversationOptionItem(
         title: 'Mute notifications',
         subtitle: 'Choose duration for this conversation',
-        onTap: () {
-          // TODO: Show mute duration bottom sheet
+        onTap: () async {
+          final action = await ConversationControlsBottomSheet.show(
+            context,
+            userName: widget.userName,
+            initialType: ConversationControlType.mute,
+          );
+          if (action != null && context.mounted) {
+            ScaffoldMessenger.of(context)
+                .showSnackBar(SnackBar(content: Text('Applied: $action')));
+          }
         },
       ),
       ConversationOptionItem(
         title: 'Report or block',
         subtitle: 'Control who can contact you',
-        onTap: () {
-          // TODO: Show report/block dialog
+        onTap: () async {
+          final action = await ConversationControlsBottomSheet.show(
+            context,
+            userName: widget.userName,
+            initialType: ConversationControlType.block,
+          );
+          if (action != null && context.mounted) {
+            ScaffoldMessenger.of(context)
+                .showSnackBar(SnackBar(content: Text('Applied: $action')));
+          }
         },
       ),
     ];
@@ -92,7 +118,6 @@ class _ConversationInfoScreenState extends State<ConversationInfoScreen> {
             left: AppSizes.screenHorizontalPadding.w,
             right: AppSizes.screenHorizontalPadding.w,
             top: AppSizes.lg.h,
-            // تأمين مسافة للـ Bottom Navigation Bar الخارجي
             bottom: AppSizes.bottomNavHeight + AppSizes.xl.h,
           ),
           child: Column(
