@@ -11,6 +11,7 @@ class CustomLabeledTextField extends StatelessWidget {
   final TextEditingController controller;
   final IconData? prefixIcon;
   final int maxLines;
+  final int? maxLength;
   final String? Function(String?)? validator;
 
   const CustomLabeledTextField({
@@ -20,6 +21,7 @@ class CustomLabeledTextField extends StatelessWidget {
     required this.controller,
     this.prefixIcon,
     this.maxLines = 1,
+    this.maxLength,
     this.validator,
   });
 
@@ -40,6 +42,7 @@ class CustomLabeledTextField extends StatelessWidget {
         TextFormField(
           controller: controller,
           maxLines: maxLines,
+          maxLength: maxLength,
           validator: validator,
           onTapOutside: (_) => FocusScope.of(context).unfocus(),
           style: TextStyles.caption.copyWith(
@@ -49,6 +52,7 @@ class CustomLabeledTextField extends StatelessWidget {
           ),
           decoration: InputDecoration(
             hintText: hintText,
+            counterText: '',
             hintStyle: TextStyles.caption.copyWith(
               fontFamily: AppFonts.Poppins,
               color: AppColors.blurcl,
