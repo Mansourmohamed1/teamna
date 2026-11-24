@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:t2mna/core/constants/app_assets.dart';
-import 'package:t2mna/core/routes/routes_name.dart';
+import 'package:teamna/core/constants/app_assets.dart';
+import 'package:teamna/core/routes/routes_name.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
