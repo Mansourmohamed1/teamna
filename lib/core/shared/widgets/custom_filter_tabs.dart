@@ -5,7 +5,6 @@ import 'package:teamna/core/constants/app_sizes.dart';
 import 'package:teamna/core/theme/app_colors.dart';
 import 'package:teamna/core/theme/app_text_style.dart';
 
-
 class CustomFilterTabs extends StatelessWidget {
   final List<String> tabs;
   final int selectedIndex;

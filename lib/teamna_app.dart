@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-
+import 'package:teamna/features/main/main_screen.dart';
 
 class TeamnaApp extends StatelessWidget {
   const TeamnaApp({super.key});
@@ -17,14 +16,7 @@ class TeamnaApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           // initialRoute: RouteNames.splash,
           // onGenerateRoute: AppRoutes.onGenerateRoute,
-          home: Scaffold(
-            body: Center(
-              child: Text(
-                'Teamna App',
-                style: TextStyle(fontSize: 24.sp),
-              ),
-            ),
-          ),
+          home: MainScreen(),
         );
       },
     );

@@ -13,6 +13,6 @@ abstract final class AppAssets {
   static const String homeBanner = 'assets/images/find_your_team.png';
   static const String peopleSvg = 'assets/icons/users-round.svg';
   static const String projectSvg = 'assets/icons/project.svg';
-  static  const String eventSvg = 'assets/icons/event.svg';
+  static const String eventSvg = 'assets/icons/event.svg';
   static const String inviteSvg = 'assets/icons/invite.svg';
 }

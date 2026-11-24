@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 abstract final class AppRoutes {
   static Route<dynamic>? onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
-      //  AUTH 
+      //  AUTH
 
       // case RouteNames.splash:
       //   return MaterialPageRoute(
@@ -11,19 +11,10 @@ abstract final class AppRoutes {
       //     settings: settings,
       //   );
 
-    
-
-      
-
-
-
-      //  NOT FOUND 
+      //  NOT FOUND
 
       default:
-        return _placeholderRoute(
-          settings,
-          'Not Found',
-        );
+        return _placeholderRoute(settings, 'Not Found');
     }
   }
 
@@ -33,11 +24,7 @@ abstract final class AppRoutes {
   ) {
     return MaterialPageRoute<void>(
       settings: settings,
-      builder: (_) => Scaffold(
-        body: Center(
-          child: Text(title),
-        ),
-      ),
+      builder: (_) => Scaffold(body: Center(child: Text(title))),
     );
   }
 }

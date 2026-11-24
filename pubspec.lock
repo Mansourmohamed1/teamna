@@ -293,6 +293,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  gap:
+    dependency: "direct main"
+    description:
+      name: gap
+      sha256: ba305c9fb29d48b4ddfc59cbe4a437fc67b2e18824ec7729196289504d50570b
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.1.0"
   glob:
     dependency: transitive
     description:
@@ -437,6 +445,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.1.0"
+  liquid_glass_lens_navbar:
+    dependency: "direct main"
+    description:
+      name: liquid_glass_lens_navbar
+      sha256: "754a7c53bd026ddce5a60e18fab03b8742565e09d5bd76d9dd170c266873b275"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.1.0"
   listen:
     dependency: transitive
     description:
