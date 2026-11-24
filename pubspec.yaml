@@ -41,7 +41,11 @@ dependencies:
   file_picker: ^10.3.3
   flutter_animate: ^4.5.2
   liquid_glass_lens_navbar: ^0.1.0
+<<<<<<< HEAD
 
+=======
+  lottie: ^3.8.2
+>>>>>>> origin/main
 dev_dependencies:
   flutter_test:
     sdk: flutter
