@@ -45,7 +45,7 @@ class _LoginScreenState extends State<LoginScreen> {
           Positioned(
             top: 0,
             right: 0,
-            child: Image.asset('assets/image/Ellipse.png', width: 155.w),
+            child: Image.asset('assets/images/Ellipse.png', width: 155.w),
           ),
           SafeArea(
             child: SingleChildScrollView(
@@ -58,7 +58,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(height: 32.h),
-                    Image.asset('assets/image/logllogin.png', height: 90.h),
+                    Image.asset('assets/images/logllogin.png', height: 90.h),
                     SizedBox(height: 20.h),
                     Text(
                       'Welcome back',

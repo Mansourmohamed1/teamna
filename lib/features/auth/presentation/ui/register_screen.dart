@@ -58,7 +58,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
           Positioned(
             top: 0,
             right: 0,
-            child: Image.asset('assets/image/Ellipse (1).png', width: 150.w),
+            child: Image.asset('assets/images/Ellipse (1).png', width: 150.w),
           ),
           SafeArea(
             child: SingleChildScrollView(

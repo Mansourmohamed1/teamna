@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:teamna/core/theme/app_colors.dart';
-import 'package:teamna/core/theme/app_text_style.dart';
+import 'package:t2mna/core/theme/app_colors.dart';
+import 'package:t2mna/core/theme/app_text_style.dart';
 
 class ProjectFiltersSheet extends StatefulWidget {
   const ProjectFiltersSheet({super.key});

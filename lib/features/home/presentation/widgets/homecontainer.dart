@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
-import 'package:teamna/core/shared/widgets/custom_svg_image.dart';
-import 'package:teamna/core/theme/app_colors.dart';
-import 'package:teamna/core/theme/app_text_style.dart';
+import 'package:t2mna/core/shared/widgets/custom_svg_image.dart';
+import 'package:t2mna/core/theme/app_colors.dart';
+import 'package:t2mna/core/theme/app_text_style.dart';
 
 class Homecontainer extends StatelessWidget {
   const Homecontainer({

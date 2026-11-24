@@ -18,7 +18,7 @@ class OnboardingItem {
 const onboardingItems = [
   OnboardingItem(
      imageHeight: 540,
-    imagePath: 'assets/image/onboading1.png',
+    imagePath: 'assets/images/onboading1.png',
     title: 'Find\nYour People',
     description: 'Connect with like-minded developers, designers,\n and creators from DEPI , NTI , ITI and more.',
     buttonText: 'Next',
@@ -26,7 +26,7 @@ const onboardingItems = [
   ),
   OnboardingItem(
     imageHeight: 495,
-    imagePath: 'assets/image/onboading2.png',
+    imagePath: 'assets/images/onboading2.png',
     title: 'Build\nReal Teams',
     description: 'Bring different skills together, form the right\n team, and turn your ideas into real projects.',
     buttonText: 'Next',
@@ -34,7 +34,7 @@ const onboardingItems = [
   ),
   OnboardingItem(
      imageHeight: 518,
-    imagePath: 'assets/image/onbording 3.png',
+    imagePath: 'assets/images/onbording 3.png',
     title: 'From Ideas to\nImpact',
     description: 'Manage tasks, track progress, and collaborate\n with your team to turn ideas into real products.',
     buttonText: 'Start',

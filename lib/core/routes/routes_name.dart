@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-abstract final class RouteNames {
-  // Auth
-  static const String splash = '/';
-}
-=======
 
 abstract final class RouteNames {
   // Auth
@@ -13,8 +7,9 @@ abstract final class RouteNames {
   static const String login = '/login';
   static const String profileSuccess = '/profile-success';
   static const String profileWizard = '/profile-wizard';
-  
+  static const String mainApp = '/main-app';
+  static const String home = '/home';
+
   
   
 }
->>>>>>> origin/dev

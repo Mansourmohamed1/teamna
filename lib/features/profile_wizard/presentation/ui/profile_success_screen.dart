@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:t2mna/core/constants/app_fonts.dart';
 import 'package:t2mna/core/constants/app_sizes.dart';
+import 'package:t2mna/core/routes/routes_name.dart';
 import 'package:t2mna/core/shared/widgets/custom_button.dart';
 import 'package:t2mna/core/theme/app_colors.dart';
 import 'package:t2mna/core/theme/app_text_style.dart';
@@ -54,7 +55,7 @@ class ProfileSuccessScreen extends StatelessWidget {
                 text: 'Start exploring',
                 backgroundColor: AppColors.orangeColor,
                 onPressed: () {
-                //  Navigator.pushReplacementNamed(context, RouteNames.home);
+                 Navigator.pushReplacementNamed(context, RouteNames.mainApp);
                 },
               ),
             ),

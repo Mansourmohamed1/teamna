@@ -14,26 +14,26 @@ const initiatives = [
   Initiative(
     name: 'DEPI',
     subtitle: 'Digital Egypt Pioneers Initiative',
-    logoPath: 'assets/image/depiEN.png',
+    logoPath: 'assets/images/depiEN.png',
   ),
   Initiative(
     name: 'NTI',
     subtitle: 'National Telecommunications Institute',
-    logoPath: 'assets/image/nti.png',
+    logoPath: 'assets/images/nti.png',
   ),
   Initiative(
     name: 'ITI',
     subtitle: 'Information Technology Institute',
-    logoPath: 'assets/image/iti.png',
+    logoPath: 'assets/images/iti.png',
   ),
   Initiative(
     name: 'University program',
     subtitle: 'Faculty of Engineering or CS',
-    logoPath: 'assets/image/uni.png',
+    logoPath: 'assets/images/uni.png',
   ),
   Initiative(
     name: 'Other / Self-taught',
     subtitle: 'Bootcamps, courses and side projects',
-    logoPath: 'assets/image/self.png',
+    logoPath: 'assets/images/self.png',
   ),
 ];

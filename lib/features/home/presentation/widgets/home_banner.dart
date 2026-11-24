@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:teamna/core/shared/widgets/custom_button.dart';
-import 'package:teamna/core/theme/app_colors.dart';
-import 'package:teamna/core/theme/app_text_style.dart';
+import 'package:t2mna/core/shared/widgets/custom_button.dart';
+import 'package:t2mna/core/theme/app_colors.dart';
+import 'package:t2mna/core/theme/app_text_style.dart';
 
 class HomeBanner extends StatelessWidget {
   final VoidCallback? onSeeMatches;
@@ -66,7 +66,7 @@ class HomeBanner extends StatelessWidget {
                   backgroundColor: AppColors.orangeColor,
                   foregroundColor: Colors.white,
                   width: 112,
-                  height: 36,
+                  height: 40,
                   textStyle: TextStyles.caption2.copyWith(
                     color: Colors.white,
                     fontWeight: FontWeight.w600,

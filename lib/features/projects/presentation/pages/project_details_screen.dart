@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:teamna/core/constants/app_design.dart';
-import 'package:teamna/core/shared/widgets/custom_button.dart';
-import 'package:teamna/core/theme/app_colors.dart';
-import 'package:teamna/core/theme/app_text_style.dart';
+import 'package:t2mna/core/constants/app_design.dart';
+import 'package:t2mna/core/shared/widgets/custom_button.dart';
+import 'package:t2mna/core/theme/app_colors.dart';
+import 'package:t2mna/core/theme/app_text_style.dart';
 import '../../data/project_model.dart';
 import 'apply_project_screen.dart';
 
@@ -194,12 +194,12 @@ class ProjectDetailsScreen extends StatelessWidget {
                                 text: 'Apply',
                                 width: 80,
                                 height:35,
-                                backgroundColor: AppColors.orangeColor,
-                                foregroundColor: AppColors.whiteColor,
                                 textStyle: TextStyles.caption.copyWith(
                                   fontSize: 16,
                                   fontWeight: FontWeight.w600,
                                 ),
+                                backgroundColor: AppColors.orangeColor,
+                                foregroundColor: AppColors.whiteColor,
                                 onPressed: () {
                                   Navigator.push(
                                     context,

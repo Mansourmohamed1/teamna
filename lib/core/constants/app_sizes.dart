@@ -1,8 +1,4 @@
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/dev
 abstract final class AppSizes {
   // Spacing
   static const double xs = 4;
@@ -14,24 +10,6 @@ abstract final class AppSizes {
   static const double xxxl = 32;
   static const double huge = 40;
 
-<<<<<<< HEAD
-  // Radius
-  static double get radiusXs => 6.r;
-  static double get radiusSm => 8.r;
-  static double get radiusMd => 30.r;
-  static double get radiusLg => 12.r;
-  static double get radiusXl => 20.r;
-  static double get radiusXxl => 24.r;
-  static double get radiusRound => 999.r;
-
-  // Buttons
-  static double get buttonHeight => 56.h;
-  static double get buttonSmallHeight => 36.h;
-  static double get buttonWidth => 327.w;
-
-  // Inputs
-  static double get inputHeight => 52.h;
-=======
 // onboarding
   static double get indicatorHeight => 6.h;
 static double get indicatorActiveWidth => 14.w;
@@ -53,7 +31,6 @@ static double get indicatorInactiveWidth => 6.w;
 
   // Inputs
   static  double get  inputHeight =>  52.h;
->>>>>>> origin/dev
 
   // Avatar
   static const double avatarSmall = 32;
@@ -68,16 +45,8 @@ static double get indicatorInactiveWidth => 6.w;
   static const double iconXLarge = 32;
 
   // Bottom navigation
-<<<<<<< HEAD
-  static double get bottomNavHeight => 98.h;
-
-  // Screen
-  static const double screenHorizontalPadding = 20;
-}
-=======
   static  double get  bottomNavHeight =>  98.h;
 
   // Screen
   static const double screenHorizontalPadding = 20;
 }
->>>>>>> origin/dev

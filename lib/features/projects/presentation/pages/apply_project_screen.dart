@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:teamna/core/constants/app_design.dart';
-import 'package:teamna/core/theme/app_colors.dart';
-import 'package:teamna/core/theme/app_text_style.dart';
+import 'package:t2mna/core/constants/app_design.dart';
+import 'package:t2mna/core/theme/app_colors.dart';
+import 'package:t2mna/core/theme/app_text_style.dart';
 import '../../data/project_model.dart';
 
 class ApplyProjectScreen extends StatefulWidget {
