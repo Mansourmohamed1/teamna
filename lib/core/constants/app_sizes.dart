@@ -10,6 +10,11 @@ abstract final class AppSizes {
   static const double xxxl = 32;
   static const double huge = 40;
 
+// onboarding
+  static double get indicatorHeight => 6.h;
+static double get indicatorActiveWidth => 14.w;
+static double get indicatorInactiveWidth => 6.w;
+
   // Radius
   static  double get radiusXs => 6.r;
   static  double  get radiusSm  => 8.r;

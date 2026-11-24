@@ -4,12 +4,12 @@ import 'package:t2mna/core/constants/app_sizes.dart';
 import 'package:t2mna/core/theme/app_colors.dart';
 import 'package:t2mna/core/theme/app_text_style.dart';
 
-
 class AppButton extends StatelessWidget {
   final String text;
   final VoidCallback onPressed;
   final Color? backgroundColor;
   final Color? foregroundColor;
+  final Color? borderColor;
 
   const AppButton({
     super.key,
@@ -17,6 +17,7 @@ class AppButton extends StatelessWidget {
     required this.onPressed,
     this.backgroundColor,
     this.foregroundColor,
+    this.borderColor,
   });
 
   @override
@@ -33,6 +34,9 @@ class AppButton extends StatelessWidget {
           padding: EdgeInsets.zero,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(AppSizes.radiusLg),
+            side: borderColor != null
+                ? BorderSide(color: borderColor!)
+                : BorderSide.none,
           ),
         ),
         child: Row(
