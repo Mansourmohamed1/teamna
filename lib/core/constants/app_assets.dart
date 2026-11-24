@@ -15,4 +15,5 @@ abstract final class AppAssets {
   static const String projectSvg = 'assets/icons/project.svg';
   static const String eventSvg = 'assets/icons/event.svg';
   static const String inviteSvg = 'assets/icons/invite.svg';
+  static const String successJson = 'assets/translations/Success.json';
 }

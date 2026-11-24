@@ -40,6 +40,7 @@ dependencies:
   flutter_svg: ^2.3.0
   gap: ^3.1.0
   liquid_glass_lens_navbar: ^0.1.0
+  lottie: ^3.8.2
 dev_dependencies:
   flutter_test:
     sdk: flutter
