@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 name: teamna
+=======
+name: t2mna
+>>>>>>> origin/dev
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -19,7 +23,11 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
+<<<<<<< HEAD
   sdk: ^3.12.2
+=======
+  sdk: ^3.13.7
+>>>>>>> origin/dev
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -35,11 +43,20 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
   flutter_screenutil: ^5.9.3
+<<<<<<< HEAD
   flutter_native_splash: ^2.4.8
   easy_localization: ^3.0.8
   flutter_svg: ^2.3.0
   gap: ^3.1.0
   liquid_glass_lens_navbar: ^0.1.0
+=======
+  easy_localization: ^3.0.8
+  flutter_svg: ^2.3.0
+  dots_indicator: ^5.0.0
+  file_picker: ^10.3.3
+  flutter_animate: ^4.5.2
+
+>>>>>>> origin/dev
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -52,6 +69,10 @@ dev_dependencies:
   flutter_lints: ^6.0.0
   json_serializable: ^6.15.2
   build_runner: ^2.15.1
+<<<<<<< HEAD
+=======
+  flutter_native_splash: ^2.4.8
+>>>>>>> origin/dev
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -66,8 +87,15 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+<<<<<<< HEAD
     - assets/images/
     - assets/icons/
+=======
+    - assets/image/
+    - assets/svg/
+    - assets/font/
+    - assets/icon/
+>>>>>>> origin/dev
     - assets/translations/
 
 
@@ -84,6 +112,7 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+<<<<<<< HEAD
  
   fonts:
     - family: Poppins
@@ -125,3 +154,40 @@ flutter:
 
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+=======
+  fonts:
+    - family: "Poppins"
+      fonts:
+        - asset: "assets/font/Poppins-Regular.ttf"
+        - asset: "assets/font/Poppins-Bold.ttf"
+        - asset: "assets/font/Poppins-Medium.ttf"
+        - asset: "assets/font/Poppins-SemiBold.ttf"
+        - asset: "assets/font/Poppins-Light.ttf"
+        - asset: "assets/font/Poppins-ExtraBold.ttf"
+        
+        
+
+          
+    - family: "Montserrat"
+      fonts:
+        - asset: "assets/font/Montserrat-Regular.ttf"
+        - asset: "assets/font/Montserrat-Bold.ttf"
+        - asset: "assets/font/Montserrat-Medium.ttf"
+        - asset: "assets/font/Montserrat-SemiBold.ttf"
+        - asset: "assets/font/Montserrat-Light.ttf"
+        - asset: "assets/font/Montserrat-ExtraBold.ttf"
+        - asset: "assets/font/Montserrat-Black.ttf"
+          weight: 700
+flutter_native_splash:
+  color: "#FBF0E6"
+  image: assets/image/logllogin.png
+  fullscreen: true
+
+  android_12:
+    color: "#FBF0E6"
+    image: assets/image/native.png
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
+  
+>>>>>>> origin/dev

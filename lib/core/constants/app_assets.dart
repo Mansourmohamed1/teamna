@@ -1,4 +1,5 @@
 abstract final class AppAssets {
+<<<<<<< HEAD
   static const String bannerInvited = 'assets/images/banner_invited.png';
   static const String boyImage = 'assets/images/boy.png';
   static const String girlImage = 'assets/images/girl.png';
@@ -15,4 +16,8 @@ abstract final class AppAssets {
   static const String projectSvg = 'assets/icons/project.svg';
   static const String eventSvg = 'assets/icons/event.svg';
   static const String inviteSvg = 'assets/icons/invite.svg';
+=======
+ static const String splash = 'assets/image/logllogin.png';
+  static const String splashWaves = 'assets/icon/wave.svg';
+>>>>>>> origin/dev
 }

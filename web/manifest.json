@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
     "name": "teamna",
     "short_name": "teamna",
+=======
+    "name": "t2mna",
+    "short_name": "t2mna",
+>>>>>>> origin/dev
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

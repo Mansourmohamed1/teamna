@@ -17,7 +17,13 @@ abstract final class AppValidators {
       return requiredError;
     }
 
+<<<<<<< HEAD
     final emailRegex = RegExp(r'^[\w\-.]+@([\w\-]+\.)+[\w\-]{2,4}$');
+=======
+    final emailRegex = RegExp(
+      r'^[\w\-.]+@([\w\-]+\.)+[\w\-]{2,4}$',
+    );
+>>>>>>> origin/dev
 
     if (!emailRegex.hasMatch(value!.trim())) {
       return 'Enter a valid email address';
@@ -26,7 +32,14 @@ abstract final class AppValidators {
     return null;
   }
 
+<<<<<<< HEAD
   static String? password(String? value, {int minLength = 6}) {
+=======
+  static String? password(
+    String? value, {
+    int minLength = 6,
+  }) {
+>>>>>>> origin/dev
     if (value == null || value.isEmpty) {
       return 'Password is required';
     }
@@ -38,7 +51,14 @@ abstract final class AppValidators {
     return null;
   }
 
+<<<<<<< HEAD
   static String? confirmPassword(String? value, String? password) {
+=======
+  static String? confirmPassword(
+    String? value,
+    String? password,
+  ) {
+>>>>>>> origin/dev
     if (value == null || value.isEmpty) {
       return 'Please confirm your password';
     }
@@ -49,4 +69,8 @@ abstract final class AppValidators {
 
     return null;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/dev

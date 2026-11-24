@@ -1,6 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
+<<<<<<< HEAD
         android:label="teamna"
+=======
+        android:label="t2mna"
+>>>>>>> origin/dev
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

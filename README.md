@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # teamna
+=======
+# t2mna
+>>>>>>> origin/dev
 
 A new Flutter project.
 
