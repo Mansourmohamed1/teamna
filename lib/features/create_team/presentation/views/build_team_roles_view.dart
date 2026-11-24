@@ -6,7 +6,7 @@ import 'package:teamna/core/shared/widgets/custom_button.dart';
 import 'package:teamna/core/theme/app_colors.dart';
 import 'package:teamna/core/theme/app_text_style.dart';
 import 'package:teamna/features/create_team/data/model/team_role_model.dart';
-import 'package:teamna/features/create_team/presentation/pages/build_team_commitment_view.dart';
+import 'package:teamna/features/create_team/presentation/views/build_team_commitment_view.dart';
 import 'package:teamna/features/create_team/presentation/widgets/build_team_app_bar.dart';
 import 'package:teamna/features/create_team/presentation/widgets/role_counter_card.dart';
 import 'package:teamna/features/create_team/presentation/widgets/total_seats_card.dart';

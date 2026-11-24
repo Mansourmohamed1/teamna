@@ -5,8 +5,12 @@ import 'package:teamna/core/constants/app_fonts.dart';
 import 'package:teamna/core/constants/app_sizes.dart';
 import 'package:teamna/core/theme/app_colors.dart';
 import 'package:teamna/core/theme/app_text_style.dart';
-import 'package:teamna/features/create_team/presentation/pages/build_team_problem_view.dart';
+import 'package:teamna/features/create_team/presentation/views/build_team_problem_view.dart';
 import 'package:teamna/features/home/presentation/pages/home_screen.dart';
+import 'package:teamna/features/leader_applicants/presentation/views/leader_applicants_view.dart';
+import 'package:teamna/features/leader_applicants/presentation/views/leave_project_handoff_view.dart';
+import 'package:teamna/features/leader_applicants/presentation/views/scope_update_bottom_sheet.dart';
+import 'package:teamna/features/leader_applicants/presentation/views/transfer_leadership_view.dart';
 import 'package:teamna/features/projects/presentation/pages/project_screen.dart';
 
 class MainScreen extends StatefulWidget {
@@ -22,6 +26,7 @@ class _MainScreenState extends State<MainScreen> {
   void _showCreateSheet() {
     showModalBottomSheet(
       context: context,
+      isScrollControlled: true,
       backgroundColor: AppColors.backgroundColor,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(
@@ -29,7 +34,7 @@ class _MainScreenState extends State<MainScreen> {
         ),
       ),
       builder: (sheetContext) => SafeArea(
-        child: Padding(
+        child: SingleChildScrollView(
           padding: EdgeInsets.symmetric(
             horizontal: AppSizes.xl.w,
             vertical: AppSizes.lg.h,
@@ -45,15 +50,17 @@ class _MainScreenState extends State<MainScreen> {
                   borderRadius: BorderRadius.circular(AppSizes.radiusRound),
                 ),
               ),
-              SizedBox(height: AppSizes.xl.h),
+              SizedBox(height: AppSizes.lg.h),
               Text(
-                'Create something new',
+                'Quick Actions',
                 style: TextStyles.title2.copyWith(
                   fontFamily: AppFonts.Poppins,
                   color: AppColors.blackColor,
                 ),
               ),
               SizedBox(height: AppSizes.lg.h),
+
+              // 1. إنشاء مشروع (Build Team Flow)
               _buildCreateOption(
                 icon: Icons.rocket_launch_outlined,
                 iconColor: AppColors.primaryColor,
@@ -70,16 +77,83 @@ class _MainScreenState extends State<MainScreen> {
                   );
                 },
               ),
-              SizedBox(height: AppSizes.md.h),
+              SizedBox(height: AppSizes.sm.h),
+
+              // 2. شاشة المتقدمين (25 Leader · Applicants)
               _buildCreateOption(
-                icon: Icons.person_add_alt_1_outlined,
-                iconColor: AppColors.orangeColor,
-                iconBgColor: AppColors.yellowColor,
-                title: 'Invite a teammate',
-                subtitle: 'Bring someone to your project',
+                icon: Icons.groups_outlined,
+                iconColor: AppColors.greenColor,
+                iconBgColor: AppColors.lightGreenColor,
+                title: 'Review applicants',
+                subtitle: 'Accept or reject team requests',
                 onTap: () {
                   Navigator.pop(sheetContext);
-                  _showMessage('Invite flow is coming next.');
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => const LeaderApplicantsView(),
+                    ),
+                  );
+                },
+              ),
+              SizedBox(height: AppSizes.sm.h),
+
+              // 3. شاشة نقل القيادة (27 Leader · Transfer Leadership)
+              _buildCreateOption(
+                icon: Icons.workspace_premium_outlined,
+                iconColor: AppColors.orangeColor,
+                iconBgColor: AppColors.yellowColor,
+                title: 'Transfer leadership',
+                subtitle: 'Nominate another member to lead',
+                onTap: () {
+                  Navigator.pop(sheetContext);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => const TransferLeadershipView(),
+                    ),
+                  );
+                },
+              ),
+              SizedBox(height: AppSizes.sm.h),
+
+              // 4. بوتوم شيت تحديث النطاق (29 Scope Change · Re-acknowledge)
+              _buildCreateOption(
+                icon: Icons.sync_rounded,
+                iconColor: AppColors.primaryColor,
+                iconBgColor: AppColors.purple500.withValues(alpha: 0.14),
+                title: 'Scope update',
+                subtitle: 'Review & confirm updated project plan',
+                onTap: () {
+                  Navigator.pop(sheetContext);
+                  ScopeUpdateBottomSheet.show(
+                    context,
+                    onAgree: () {
+                      _showMessage('You agreed to the updated scope!');
+                    },
+                    onTalkToTeam: () {
+                      setState(() => _selectedIndex = 2);
+                    },
+                  );
+                },
+              ),
+              SizedBox(height: AppSizes.sm.h),
+
+              // 5. شاشة مغادرة المشروع وتسليم الشغل (26 Exit -> 28 Handoff Submitted)
+              _buildCreateOption(
+                icon: Icons.exit_to_app_rounded,
+                iconColor: AppColors.redColor,
+                iconBgColor: AppColors.lighRedColor,
+                title: 'Leave project (Handoff)',
+                subtitle: 'Submit your branch & leave team',
+                onTap: () {
+                  Navigator.pop(sheetContext);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => const LeaveProjectHandoffView(),
+                    ),
+                  );
                 },
               ),
               SizedBox(height: AppSizes.sm.h),

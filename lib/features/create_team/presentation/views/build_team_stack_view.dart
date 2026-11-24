@@ -5,7 +5,7 @@ import 'package:teamna/core/constants/app_sizes.dart';
 import 'package:teamna/core/shared/widgets/custom_button.dart';
 import 'package:teamna/core/theme/app_colors.dart';
 import 'package:teamna/core/theme/app_text_style.dart';
-import 'package:teamna/features/create_team/presentation/pages/build_team_roles_view.dart';
+import 'package:teamna/features/create_team/presentation/views/build_team_roles_view.dart';
 import '../widgets/build_team_app_bar.dart';
 import '../widgets/selectable_chip_group.dart';
 import '../widgets/tip_info_card.dart';
