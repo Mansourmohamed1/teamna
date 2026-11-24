@@ -11,6 +11,7 @@ import 'package:teamna/features/leader_applicants/presentation/views/leader_appl
 import 'package:teamna/features/leader_applicants/presentation/views/leave_project_handoff_view.dart';
 import 'package:teamna/features/leader_applicants/presentation/views/scope_update_bottom_sheet.dart';
 import 'package:teamna/features/leader_applicants/presentation/views/transfer_leadership_view.dart';
+import 'package:teamna/features/profile/presentation/views/profile_view.dart';
 import 'package:teamna/features/projects/presentation/pages/project_screen.dart';
 
 class MainScreen extends StatefulWidget {
@@ -60,7 +61,6 @@ class _MainScreenState extends State<MainScreen> {
               ),
               SizedBox(height: AppSizes.lg.h),
 
-              // 1. إنشاء مشروع (Build Team Flow)
               _buildCreateOption(
                 icon: Icons.rocket_launch_outlined,
                 iconColor: AppColors.primaryColor,
@@ -79,7 +79,6 @@ class _MainScreenState extends State<MainScreen> {
               ),
               SizedBox(height: AppSizes.sm.h),
 
-              // 2. شاشة المتقدمين (25 Leader · Applicants)
               _buildCreateOption(
                 icon: Icons.groups_outlined,
                 iconColor: AppColors.greenColor,
@@ -98,7 +97,6 @@ class _MainScreenState extends State<MainScreen> {
               ),
               SizedBox(height: AppSizes.sm.h),
 
-              // 3. شاشة نقل القيادة (27 Leader · Transfer Leadership)
               _buildCreateOption(
                 icon: Icons.workspace_premium_outlined,
                 iconColor: AppColors.orangeColor,
@@ -117,7 +115,6 @@ class _MainScreenState extends State<MainScreen> {
               ),
               SizedBox(height: AppSizes.sm.h),
 
-              // 4. بوتوم شيت تحديث النطاق (29 Scope Change · Re-acknowledge)
               _buildCreateOption(
                 icon: Icons.sync_rounded,
                 iconColor: AppColors.primaryColor,
@@ -139,7 +136,6 @@ class _MainScreenState extends State<MainScreen> {
               ),
               SizedBox(height: AppSizes.sm.h),
 
-              // 5. شاشة مغادرة المشروع وتسليم الشغل (26 Exit -> 28 Handoff Submitted)
               _buildCreateOption(
                 icon: Icons.exit_to_app_rounded,
                 iconColor: AppColors.redColor,
@@ -337,9 +333,9 @@ class _MainScreenState extends State<MainScreen> {
                       ),
                     ),
                     _buildNavItem(
-                      icon: Icons.chat_bubble_outline_rounded,
-                      activeIcon: Icons.chat_bubble_rounded,
-                      label: 'Messages',
+                      icon: Icons.layers_outlined,
+                      activeIcon: Icons.layers_outlined,
+                      label: 'Projects',
                       index: 2,
                     ),
                     _buildNavItem(
@@ -416,8 +412,8 @@ class _MainScreenState extends State<MainScreen> {
     final screens = [
       const HomeScreen(),
       const ProjectScreen(),
-      const _SimplePage(title: 'Messages', icon: Icons.chat_bubble_outline),
-      const _SimplePage(title: 'Profile', icon: Icons.person_outline),
+      const _SimplePage(title: 'Projects', icon: Icons.layers_outlined),
+      const ProfileView(),
     ];
 
     return Scaffold(
