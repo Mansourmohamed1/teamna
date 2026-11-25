@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:teamna/core/constants/app_sizes.dart';
-import 'package:teamna/core/theme/app_colors.dart';
-import 'package:teamna/features/profile/data/models/user_profile_model.dart';
-import 'package:teamna/features/profile/presentation/views/edit_profile_view.dart';
-import 'package:teamna/features/profile/presentation/widgets/profile_header_bar.dart';
-import 'package:teamna/features/profile/presentation/widgets/profile_info_card.dart';
-import 'package:teamna/features/profile/presentation/widgets/profile_recent_activity_card.dart';
-import 'package:teamna/features/profile/presentation/widgets/profile_skills_card.dart';
-import 'package:teamna/features/profile/presentation/widgets/profile_stats_card.dart';
-import 'package:teamna/features/profile/presentation/widgets/profile_verified_banner.dart';
+import 'package:t2mna/core/constants/app_sizes.dart';
+import 'package:t2mna/core/theme/app_colors.dart';
+import 'package:t2mna/features/profile/data/models/user_profile_model.dart';
+import 'package:t2mna/features/profile/presentation/views/edit_profile_view.dart';
+import 'package:t2mna/features/profile/presentation/widgets/profile_header_bar.dart';
+import 'package:t2mna/features/profile/presentation/widgets/profile_info_card.dart';
+import 'package:t2mna/features/profile/presentation/widgets/profile_recent_activity_card.dart';
+import 'package:t2mna/features/profile/presentation/widgets/profile_skills_card.dart';
+import 'package:t2mna/features/profile/presentation/widgets/profile_stats_card.dart';
+import 'package:t2mna/features/profile/presentation/widgets/profile_verified_banner.dart';
 import 'verification_get_started_view.dart';
 
 class ProfileView extends StatefulWidget {
@@ -35,7 +35,7 @@ class _ProfileViewState extends State<ProfileView> {
           'Building mobile apps with BLoC and Firebase. Looking for a team to ship a real product.',
       isVerified: true,
       verificationTitle: 'Verified · DEPI Round 7',
-      verificationDate: 'Confirmed by Teamna on 12 Oct 2026',
+      verificationDate: 'Confirmed by t2mna on 12 Oct 2026',
       projectsCount: 3,
       applicationsCount: 8,
       avgMatchPercentage: 91,

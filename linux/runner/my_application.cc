@@ -46,11 +46,11 @@ static void my_application_activate(GApplication* application) {
     GtkHeaderBar* header_bar = GTK_HEADER_BAR(gtk_header_bar_new());
     gtk_widget_show(GTK_WIDGET(header_bar));
 <<<<<<< HEAD
-    gtk_header_bar_set_title(header_bar, "teamna");
+    gtk_header_bar_set_title(header_bar, "t2mna");
     gtk_header_bar_set_show_close_button(header_bar, TRUE);
     gtk_window_set_titlebar(window, GTK_WIDGET(header_bar));
   } else {
-    gtk_window_set_title(window, "teamna");
+    gtk_window_set_title(window, "t2mna");
 =======
     gtk_header_bar_set_title(header_bar, "t2mna");
     gtk_header_bar_set_show_close_button(header_bar, TRUE);

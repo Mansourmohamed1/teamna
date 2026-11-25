@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:teamna/core/constants/app_fonts.dart';
-import 'package:teamna/core/constants/app_sizes.dart';
-import 'package:teamna/core/shared/widgets/custom_button.dart';
-import 'package:teamna/core/theme/app_colors.dart';
-import 'package:teamna/core/theme/app_text_style.dart';
-import 'package:teamna/features/leader_applicants/data/models/applicant_model.dart';
-import 'package:teamna/features/leader_applicants/presentation/views/scope_update_bottom_sheet.dart';
-import 'package:teamna/features/leader_applicants/presentation/widgets/applicant_card.dart';
-import 'package:teamna/features/leader_applicants/presentation/widgets/leader_app_bar.dart';
-import 'package:teamna/features/leader_applicants/presentation/widgets/role_filter_tabs.dart';
+import 'package:t2mna/core/constants/app_fonts.dart';
+import 'package:t2mna/core/constants/app_sizes.dart';
+import 'package:t2mna/core/shared/widgets/custom_button.dart';
+import 'package:t2mna/core/theme/app_colors.dart';
+import 'package:t2mna/core/theme/app_text_style.dart';
+import 'package:t2mna/features/leader_applicants/data/models/applicant_model.dart';
+import 'package:t2mna/features/leader_applicants/presentation/views/scope_update_bottom_sheet.dart';
+import 'package:t2mna/features/leader_applicants/presentation/widgets/applicant_card.dart';
+import 'package:t2mna/features/leader_applicants/presentation/widgets/leader_app_bar.dart';
+import 'package:t2mna/features/leader_applicants/presentation/widgets/role_filter_tabs.dart';
 
 import 'leave_project_handoff_view.dart';
 import 'transfer_leadership_view.dart';

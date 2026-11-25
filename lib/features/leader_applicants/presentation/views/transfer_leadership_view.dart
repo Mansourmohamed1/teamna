@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:teamna/core/constants/app_fonts.dart';
-import 'package:teamna/core/constants/app_sizes.dart';
-import 'package:teamna/core/shared/widgets/custom_button.dart';
-import 'package:teamna/core/theme/app_colors.dart';
-import 'package:teamna/core/theme/app_text_style.dart';
-import 'package:teamna/features/create_team/presentation/widgets/tip_info_card.dart';
-import 'package:teamna/features/leader_applicants/data/models/team_member_model.dart';
-import 'package:teamna/features/leader_applicants/presentation/widgets/leader_app_bar.dart';
-import 'package:teamna/features/leader_applicants/presentation/widgets/leader_member_selection_card.dart';
+import 'package:t2mna/core/constants/app_fonts.dart';
+import 'package:t2mna/core/constants/app_sizes.dart';
+import 'package:t2mna/core/shared/widgets/custom_button.dart';
+import 'package:t2mna/core/theme/app_colors.dart';
+import 'package:t2mna/core/theme/app_text_style.dart';
+import 'package:t2mna/features/create_team/presentation/widgets/tip_info_card.dart';
+import 'package:t2mna/features/leader_applicants/data/models/team_member_model.dart';
+import 'package:t2mna/features/leader_applicants/presentation/widgets/leader_app_bar.dart';
+import 'package:t2mna/features/leader_applicants/presentation/widgets/leader_member_selection_card.dart';
 
 class TransferLeadershipView extends StatefulWidget {
   const TransferLeadershipView({super.key});

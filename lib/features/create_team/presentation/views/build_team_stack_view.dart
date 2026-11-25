@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:teamna/core/constants/app_fonts.dart';
-import 'package:teamna/core/constants/app_sizes.dart';
-import 'package:teamna/core/shared/widgets/custom_button.dart';
-import 'package:teamna/core/theme/app_colors.dart';
-import 'package:teamna/core/theme/app_text_style.dart';
-import 'package:teamna/features/create_team/presentation/views/build_team_roles_view.dart';
+import 'package:t2mna/core/constants/app_fonts.dart';
+import 'package:t2mna/core/constants/app_sizes.dart';
+import 'package:t2mna/core/shared/widgets/custom_button.dart';
+import 'package:t2mna/core/theme/app_colors.dart';
+import 'package:t2mna/core/theme/app_text_style.dart';
+import 'package:t2mna/features/create_team/presentation/views/build_team_roles_view.dart';
 import '../widgets/build_team_app_bar.dart';
 import '../widgets/selectable_chip_group.dart';
 import '../widgets/tip_info_card.dart';

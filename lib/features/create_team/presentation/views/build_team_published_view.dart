@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:teamna/core/constants/app_assets.dart';
-import 'package:teamna/core/constants/app_fonts.dart';
-import 'package:teamna/core/constants/app_sizes.dart';
-import 'package:teamna/core/shared/widgets/custom_button.dart';
-import 'package:teamna/core/theme/app_colors.dart';
-import 'package:teamna/core/theme/app_text_style.dart';
+import 'package:t2mna/core/constants/app_assets.dart';
+import 'package:t2mna/core/constants/app_fonts.dart';
+import 'package:t2mna/core/constants/app_sizes.dart';
+import 'package:t2mna/core/shared/widgets/custom_button.dart';
+import 'package:t2mna/core/theme/app_colors.dart';
+import 'package:t2mna/core/theme/app_text_style.dart';
 import '../widgets/project_live_animation.dart';
 import '../widgets/project_share_link_card.dart';
 
@@ -16,7 +16,7 @@ class BuildTeamPublishedView extends StatelessWidget {
   const BuildTeamPublishedView({
     super.key,
     this.projectName = 'Campus Carpool',
-    this.projectUrl = 'teamna.app/p/campus-carpool',
+    this.projectUrl = 't2mna.app/p/campus-carpool',
   });
 
   @override

@@ -8,7 +8,7 @@
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
 <<<<<<< HEAD
-	<string>Teamna</string>
+	<string>t2mna</string>
 =======
 	<string>T2mna</string>
 >>>>>>> origin/dev
@@ -20,7 +20,7 @@
 	<string>6.0</string>
 	<key>CFBundleName</key>
 <<<<<<< HEAD
-	<string>teamna</string>
+	<string>t2mna</string>
 =======
 	<string>t2mna</string>
 >>>>>>> origin/dev

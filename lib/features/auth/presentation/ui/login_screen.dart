@@ -128,7 +128,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                     SizedBox(height: AppSizes.xl.h),
                     AuthFooterLink(
-                      text: 'New to Teamna?',
+                      text: 'New to t2mna?',
                       linkText: 'Create account',
                       onTap: () {
                         Navigator.pushNamed(context, '/register');

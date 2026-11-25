@@ -17,13 +17,13 @@ class VerifyStep extends StatelessWidget {
   const VerifyStep({super.key, required this.data, required this.onChanged});
 
   Future<void> _pickFile() async {
-  final result = await FilePicker.platform.pickFiles(
+  final result = await FilePicker.pickFiles(
     type: FileType.custom,
     allowedExtensions: ['pdf', 'jpg', 'jpeg', 'png'],
   );
 
-  if (result != null && result.files.isNotEmpty) {
-    data.fileName = result.files.single.name;
+  if (result.isNotEmpty) {
+    data.fileName = result.single.name;
 
     onChanged();
   }

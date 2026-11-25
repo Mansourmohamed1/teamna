@@ -15,10 +15,7 @@ abstract final class AppAssets {
   static const String projectSvg = 'assets/icons/project.svg';
   static const String eventSvg = 'assets/icons/event.svg';
   static const String inviteSvg = 'assets/icons/invite.svg';
-<<<<<<< HEAD
   static const String splash = 'assets/images/logllogin.png';
   static const String splashWaves = 'assets/icons/wave.svg';
-=======
   static const String successJson = 'assets/translations/Success.json';
->>>>>>> origin/main
 }

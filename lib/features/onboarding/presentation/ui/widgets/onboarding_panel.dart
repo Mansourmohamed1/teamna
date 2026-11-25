@@ -40,7 +40,7 @@ class OnboardingBottomPanel extends StatelessWidget {
       child: Stack(
         fit: StackFit.expand,
         children: [
-          SvgPicture.asset('assets/icon/panel 1.svg', fit: BoxFit.fill),
+          SvgPicture.asset('assets/icons/panel 1.svg', fit: BoxFit.fill),
           Padding(
             padding: const EdgeInsets.fromLTRB(
               AppSizes.screenHorizontalPadding,

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:teamna/core/constants/app_fonts.dart';
-import 'package:teamna/core/constants/app_sizes.dart';
-import 'package:teamna/core/shared/widgets/custom_button.dart';
-import 'package:teamna/core/theme/app_colors.dart';
-import 'package:teamna/core/theme/app_text_style.dart';
-import 'package:teamna/features/leader_applicants/presentation/widgets/leader_app_bar.dart';
+import 'package:t2mna/core/constants/app_fonts.dart';
+import 'package:t2mna/core/constants/app_sizes.dart';
+import 'package:t2mna/core/shared/widgets/custom_button.dart';
+import 'package:t2mna/core/theme/app_colors.dart';
+import 'package:t2mna/core/theme/app_text_style.dart';
+import 'package:t2mna/features/leader_applicants/presentation/widgets/leader_app_bar.dart';
 import '../widgets/verification_progress_card.dart';
 
 class VerificationGetStartedView extends StatelessWidget {
@@ -157,7 +157,7 @@ class VerificationGetStartedView extends StatelessWidget {
                                   ),
                                   SizedBox(height: 2.h),
                                   Text(
-                                    'Files are encrypted and only visible to Teamna admins. They are never shown on your profile.',
+                                    'Files are encrypted and only visible to t2mna admins. They are never shown on your profile.',
                                     style: TextStyles.caption2.copyWith(
                                       fontFamily: AppFonts.Poppins,
                                       color: AppColors.blurcl,
