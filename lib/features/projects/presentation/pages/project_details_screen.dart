@@ -15,7 +15,7 @@ class ProjectDetailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.backgroundColor,
-      appBar: MainAppBar(),
+      appBar: MainAppBar(title: "Project Details",),
       body: Padding(
         padding: EdgeInsets.all(AppDesign.padding),
         child: Column(

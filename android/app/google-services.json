@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "882767410818",
+    "project_id": "t2mna-f4ab0",
+    "storage_bucket": "t2mna-f4ab0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882767410818:android:cd81ea36cde5952c70669b",
+        "android_client_info": {
+          "package_name": "com.example.t2mna"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzkzr7ytUkV5J4DzT-xUdMQs9Tk7Tsedg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

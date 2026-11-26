@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:t2mna/core/constants/app_design.dart';
 import 'package:t2mna/core/shared/widgets/custom_button.dart';
+import 'package:t2mna/core/shared/widgets/main_app_bar.dart';
 import 'package:t2mna/core/theme/app_colors.dart';
 import 'package:t2mna/core/theme/app_text_style.dart';
 
@@ -54,27 +55,7 @@ class _ApplyProjectScreenState extends State<ApplyProjectScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.backgroundColor,
-      appBar: AppBar(
-        backgroundColor: AppColors.backgroundColor,
-        elevation: 0,
-        surfaceTintColor: AppColors.backgroundColor,
-        centerTitle: true,
-        leading: IconButton(
-          onPressed: () => Navigator.pop(context),
-          icon: const Icon(
-            Icons.arrow_back_ios_new_rounded,
-            size: 19,
-            color: AppColors.primaryColor,
-          ),
-        ),
-        title: Text(
-          'Apply to join',
-          style: TextStyles.body.copyWith(
-            color: AppColors.blackColor,
-            fontWeight: FontWeight.w700,
-          ),
-        ),
-      ),
+      appBar: MainAppBar(title: 'Apply to join', showAction: false,),
 
       body: SingleChildScrollView(
         padding: EdgeInsets.all(AppDesign.padding),

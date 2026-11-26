@@ -42,6 +42,7 @@ dependencies:
   flutter_animate: ^4.5.2
   liquid_glass_lens_navbar: ^0.1.0
   lottie: ^3.8.2
+  firebase_core: ^5.2.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
