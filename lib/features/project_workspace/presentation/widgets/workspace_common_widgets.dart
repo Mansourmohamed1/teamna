@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:t2mna/core/constants/app_assets.dart';
 import 'package:t2mna/core/theme/app_colors.dart';
 import 'package:t2mna/core/theme/app_text_style.dart';
 
@@ -17,7 +18,7 @@ class WorkspacePill extends StatelessWidget {
       borderRadius: BorderRadius.circular(20),
     ),
     child: Text(text, style: TextStyles.caption2.copyWith(
-      color: foreground, fontSize: 9, fontWeight: FontWeight.w600,
+      color: foreground, fontWeight: FontWeight.w600,
     )),
   );
 }
@@ -30,16 +31,9 @@ class WorkspaceTinyAvatar extends StatelessWidget {
   const WorkspaceTinyAvatar(this.initials, this.color, {super.key, this.size = 23});
 
   @override
-  Widget build(BuildContext context) => Container(
-    width: size,
-    height: size,
-    decoration: BoxDecoration(color: color, shape: BoxShape.circle),
-    alignment: Alignment.center,
-    child: Text(initials, style: TextStyle(
-      fontSize: size < 25 ? 8 : 10,
-      color: AppColors.primaryColor,
-      fontWeight: FontWeight.w700,
-    )),
+  Widget build(BuildContext context) => ClipRRect(
+    borderRadius: BorderRadius.circular(size),
+    child: Image.asset(AppAssets.girlImage, width: size, height: size, fit: BoxFit.cover),
   );
 }
 
@@ -56,13 +50,13 @@ class WorkspaceSectionHeading extends StatelessWidget {
   Widget build(BuildContext context) => Row(
     children: [
       Text(title, style: TextStyles.body.copyWith(
-        color: AppColors.primaryColor, fontSize: 14, fontWeight: FontWeight.w700,
+        color: AppColors.blackColor, fontSize: 18, fontWeight: FontWeight.w700,
       )),
       const Spacer(),
       if (action != null)
         TextButton(
           onPressed: onAction,
-          child: Text(action!, style: TextStyles.caption2.copyWith(
+          child: Text(action!, style: TextStyles.caption.copyWith(
             color: AppColors.orangeColor, fontWeight: FontWeight.w600,
           )),
         ),

@@ -25,7 +25,7 @@ class OverviewTaskCard extends StatelessWidget {
   Widget build(BuildContext context) => Container(
     padding: const EdgeInsets.all(12),
     decoration: BoxDecoration(
-      color: Colors.white,
+      color: AppColors.whiteColor,
       borderRadius: BorderRadius.circular(16),
       boxShadow: [BoxShadow(
         color: Colors.black.withValues(alpha: .04),
@@ -39,10 +39,10 @@ class OverviewTaskCard extends StatelessWidget {
         Row(children: [
           WorkspacePill(category, tagColor, AppColors.orangeColor),
           const Spacer(),
-          const Icon(Icons.more_horiz, color: AppColors.blurcl, size: 18),
+          const Icon(Icons.more_horiz, color: AppColors.blurcl, size: 20),
         ]),
         const SizedBox(height: 8),
-        Text(title, style: TextStyles.caption2.copyWith(
+        Text(title, style: TextStyles.body.copyWith(
           color: AppColors.primaryColor, fontWeight: FontWeight.w700,
         )),
         const SizedBox(height: 9),
@@ -57,16 +57,16 @@ class OverviewTaskCard extends StatelessWidget {
         ),
         const SizedBox(height: 8),
         Row(children: [
-          const WorkspaceTinyAvatar('HM', Color(0xFFDCE9FC)),
+          const WorkspaceTinyAvatar('HM', Color(0xFFDCE9FC) ,size:35 ,),
           const SizedBox(width: 5),
-          Text(owner, style: TextStyles.caption2.copyWith(
-            color: AppColors.blurcl, fontSize: 10,
+          Text(owner, style: TextStyles.caption.copyWith(
+            color: AppColors.blurcl,
           )),
           const Spacer(),
-          const Icon(Icons.calendar_today_outlined, size: 11, color: AppColors.blurcl),
+          const Icon(Icons.calendar_today_outlined, size: 15, color: AppColors.blurcl),
           const SizedBox(width: 4),
           Text(due, style: TextStyles.caption2.copyWith(
-            color: AppColors.blurcl, fontSize: 10,
+            color: AppColors.blurcl,
           )),
         ]),
       ],

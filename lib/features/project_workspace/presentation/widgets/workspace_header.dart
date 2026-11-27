@@ -16,14 +16,14 @@ class WorkspaceHeader extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const SizedBox(height: 14),
-          Text('Workspace', style: TextStyles.caption2.copyWith(
+          Text('Workspace', style: TextStyles.caption.copyWith(
             color: AppColors.blurcl,
           )),
           const SizedBox(height: 2),
           Row(
             children: [
-              Expanded(child: Text('Campus Carpool', style: TextStyles.title2.copyWith(
-                color: AppColors.primaryColor, fontWeight: FontWeight.w700,
+              Expanded(child: Text('Campus Carpool', style: TextStyles.title1.copyWith(
+                color: AppColors.blackColor, fontWeight: FontWeight.w700,
               ))),
               IconButton(
                 visualDensity: VisualDensity.compact,

@@ -41,7 +41,7 @@ class WorkspaceTabs extends StatelessWidget {
                     labels[index],
                     style: TextStyles.caption.copyWith(
                       color: active ? AppColors.primaryColor : AppColors.blurcl,
-                      fontWeight: active ? FontWeight.w700 : FontWeight.w400,
+                      fontWeight: active ? FontWeight.w700 : FontWeight.w500,
                     ),
                   ),
                 ),

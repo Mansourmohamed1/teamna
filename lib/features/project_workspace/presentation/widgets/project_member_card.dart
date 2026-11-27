@@ -28,7 +28,7 @@ class ProjectMemberCard extends StatelessWidget {
     decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
     child: Row(children: [
       CircleAvatar(
-        radius: 18,
+        radius: 22,
         backgroundColor: avatarColor,
         child: Text(initials, style: TextStyles.caption.copyWith(
           color: AppColors.primaryColor, fontWeight: FontWeight.w700,
